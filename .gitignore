@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+
+# Streamlit
+.streamlit/
+
+# IDE/Editor
+.vscode/
+.idea/
+
+# Local Data & Models
+results_qwen3/
+qwen3-4b-samsung-support-adapter/
+
+# System files
+.DS_Store
