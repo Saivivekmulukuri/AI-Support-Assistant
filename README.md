@@ -13,11 +13,11 @@ This project is a fully functional AI-powered chatbot designed to act as an expe
 
 This project demonstrates a state-of-the-art approach to building specialized AI assistants:
 
-1.  **Fine-Tuning (The "Personality"):** The base Qwen3-4B model was fine-tuned on the `databricks-dolly-15k` dataset. This process doesn't teach the model new facts but rather adjusts its **style and persona**. The goal was to train it to communicate like a helpful support agent—structuring answers clearly, using step-by-step instructions, and maintaining a supportive tone. This is handled by `tuning.py`.
+1.  **Fine-Tuning (The "Personality"):** The base Qwen3-4B model was fine-tuned on the `databricks-dolly-15k` dataset. This process doesn't teach the model new facts but rather adjusts its **style and persona**. The goal was to train it to communicate like a helpful support agent—structuring answers clearly, using step-by-step instructions, and maintaining a supportive tone. This is handled by `finetuning.py`.
 2.  **RAG (The "Knowledge"):** The RAG pipeline provides the model with factual, up-to-date information at inference time. When a user asks a question, the system:
     * Scans a vector database (built from Samsung user manuals) to find the most relevant text chunks.
     * Injects these chunks as context into a prompt for the fine-tuned model.
-    * The model then generates an answer based *only* on the provided context, ensuring factual accuracy. This is handled by `app.py`.
+    * The model then generates an answer based *only* on the provided context, ensuring factual accuracy. This is handled by `streamlit_app.py`.
 
 ## Tech Stack
 
