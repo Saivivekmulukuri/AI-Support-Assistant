@@ -1,5 +1,5 @@
 # AI Technical Support Assistant for Samsung S25 Ultra
-
+![A demo of the AI Support Assistant](./assets/chatbot_demo.png)
 This project is a fully functional AI-powered chatbot designed to act as an expert technical support assistant for the Samsung S25 Ultra mobile phone. It leverages a powerful combination of Retrieval-Augmented Generation (RAG) and model fine-tuning to provide accurate, helpful, and context-aware answers based on official documentation.
 
 ## Key Features
